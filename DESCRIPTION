@@ -12,5 +12,6 @@ Imports:
     stringr,
     ggplot2,
     data.table
+    RPostgreSQL
 Collate:
     'flybasesymbol.R'
