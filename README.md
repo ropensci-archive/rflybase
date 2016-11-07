@@ -1,12 +1,14 @@
 rflybase
 =======
 
-## UPDATE as of 2014-08-20
+## UPDATE as of 2016-10.15
 
-This package will undergo no further development. 
+This package has been rebooted. Access to the flybase Chado database (read only public copy) is done using RPostgreSQL. Functions are based on SQRL queries.
 
 ## Info
 
-rflybase is an R wrapper to REST based service for fetching Chado XML from FlyBase.
+FlyBase  provides public read only access to our Chado database. It is not supposed to get intensive traffic. Please read the flybase instruction to downlaod the database for intense use.
+ftp://ftp.flybase.net/releases/FB2016_04/psql/README
 
-Documentation for FlyBase: http://www.biocatalogue.org/services/2711
+
+Example of queries: http://gmod.org/wiki/FlyBase_Field_Mapping_Tables

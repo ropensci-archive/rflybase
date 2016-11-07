@@ -11,6 +11,8 @@ Imports:
     RCurl (>= 1.6),
     stringr,
     ggplot2,
-    data.table
+    data.table,
+    RPostgreSQL
 Collate:
     'flybasesymbol.R'
+RoxygenNote: 5.0.1
