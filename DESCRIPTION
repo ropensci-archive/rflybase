@@ -1,6 +1,6 @@
 Package: rflybase
 Title: Interface to 'FlyBase'
-Description: An interface to the 'FlyBase'.
+Description: An interface to the 'FlyBase' (<http://flybase.org>).
 Version: 0.1.9400
 License: MIT + file LICENSE
 Authors@R: c(
