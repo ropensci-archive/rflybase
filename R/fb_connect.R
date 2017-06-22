@@ -24,7 +24,7 @@
 #' 
 #' tbl(src, sql('SELECT * FROM phenotype WHERE "phenotype_id" = 8511'))
 #' }
-fb_connect <- function(dbname = "flybase", host = "flybase.org", 
+fb_connect <- function(dbname = "flybase", host = "chado.flybase.org", 
                        port = 5432, user = "flybase", password = "flybase", 
                        dplyr = FALSE, ...) {
   drv <- DBI::dbDriver("PostgreSQL")
@@ -33,11 +33,11 @@ fb_connect <- function(dbname = "flybase", host = "flybase.org",
       stop("install 'dplyr'", call. = FALSE)
     }
     dplyr::src_postgres(dbname = "flybase",
-                        host = "flybase.org", port = 5432,
+                        host = "chado.flybase.org", port = 5432,
                         user = "flybase", password = "flybase", ...)
   } else {
     DBI::dbConnect(drv, dbname = "flybase",
-                   host = "flybase.org", port = 5432,
+                   host = "chado.flybase.org", port = 5432,
                    user = "flybase", password = "flybase", ...) 
   }
 }  
