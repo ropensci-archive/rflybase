@@ -2,7 +2,7 @@
 #'  
 #' @export
 #' @param dbname (character) database name. default: flybase
-#' @param host (character) database name. default: flybase.org
+#' @param host (character) database name. default: chado.flybase.org
 #' @param port (integer) database name. default: 5432
 #' @param user (character) database name. default: flybase
 #' @param password (character) database name. default: flybase

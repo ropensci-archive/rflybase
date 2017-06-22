@@ -4,13 +4,13 @@
 \alias{fb_connect}
 \title{Returns the connection to the database}
 \usage{
-fb_connect(dbname = "flybase", host = "flybase.org", port = 5432,
+fb_connect(dbname = "flybase", host = "chado.flybase.org", port = 5432,
   user = "flybase", password = "flybase", dplyr = FALSE, ...)
 }
 \arguments{
 \item{dbname}{(character) database name. default: flybase}
 
-\item{host}{(character) database name. default: flybase.org}
+\item{host}{(character) database name. default: chado.flybase.org}
 
 \item{port}{(integer) database name. default: 5432}
 
@@ -45,4 +45,3 @@ orgs \%>\% filter(genus == "Antheraea")
 tbl(src, sql('SELECT * FROM phenotype WHERE "phenotype_id" = 8511'))
 }
 }
-

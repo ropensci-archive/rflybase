@@ -1,7 +1,7 @@
 Package: rflybase
 Title: Interface to 'FlyBase'
 Description: An interface to the 'FlyBase' (<http://flybase.org>).
-Version: 0.1.9400
+Version: 0.2.1.9310
 License: MIT + file LICENSE
 Authors@R: c(
     person("Scott", "Chamberlain", role = c("aut", "cre"), email = "myrmecocystus@gmail.com"),
@@ -13,5 +13,7 @@ Imports:
     RPostgreSQL,
     DBI
 Suggests:
-    dplyr
-RoxygenNote: 5.0.1
+    dplyr,
+    dbplyr,
+    roxygen2 (>= 6.0.1)
+RoxygenNote: 6.0.1

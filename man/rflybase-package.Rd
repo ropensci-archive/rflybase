@@ -2,8 +2,8 @@
 % Please edit documentation in R/rflybase-package.R
 \docType{package}
 \name{rflybase-package}
-\alias{rflybase}
 \alias{rflybase-package}
+\alias{rflybase}
 \title{Interface to Flybase (\url{http://flybase.org/})}
 \description{
 rflybase: A programmatic interface to Flybase.org
@@ -21,9 +21,9 @@ remote database (the default set up for this package).
 To use the remote database, follow instructions at 
 ftp://ftp.flybase.net/releases/FB2016_05/psql/README
 }
+
 \author{
 Scott Chamberlain \email{myrmecocystus@gmail.com}
 
 Julien Colomb
 }
-
