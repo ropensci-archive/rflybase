@@ -3,3 +3,5 @@
 ^\.travis\.yml$
 ^\.Rhistory
 ^\.github
+CONDUCT.md
+README.Rmd
