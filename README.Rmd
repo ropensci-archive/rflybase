@@ -1,0 +1,47 @@
+rflybase
+=======
+
+## UPDATE as of 2016-10.15
+
+This package has been rebooted. Access to the flybase Chado database (read only public copy) is done using RPostgreSQL. Functions are based on SQRL queries.
+
+## Info
+
+FlyBase  provides public read only access to our Chado database. It is not supposed to get intensive traffic. Please read the flybase instruction to downlaod the database for intense use.
+ftp://ftp.flybase.net/releases/FB2016_04/psql/README
+
+
+Example of queries: <http://gmod.org/wiki/FlyBase_Field_Mapping_Tables>
+
+## Install
+
+```{r eval=FALSE}
+devtools::install_github("ropensci/rflybase")
+```
+
+```{r}
+library("rflybase")
+```
+
+## setup connection to flybase database
+
+```{r}
+conn <- fb_connect()
+```
+
+## query
+
+```{r}
+library("dplyr")
+src <- fb_connect(dplyr = TRUE)
+orgs <- src %>% tbl("organism")
+orgs %>% filter(genus == "Antheraea")
+```
+
+
+## Meta
+
+* Please [report any issues or bugs](https://github.com/ropensci/rflybase/issues).
+* License: MIT
+* Get citation information for `rflybase` in R doing `citation(package = 'rflybase')`
+* Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
