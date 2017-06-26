@@ -33,7 +33,7 @@ fb_clean_stock_name <- function(genotype_name, output = "text") {
   names(G) =c ("link","allele", "extra")
   
   if (output == "html") {
-    G = G %>% mutate (temp= paste0 ('<a href="http://flybase.org/reports/',link,'.html">',allele,"</a>"))
+    G = G %>% mutate (temp= paste0 ('<a href="http://flybase.org/reports/',link,'.html" target="_blank">',allele,"</a>"))
     res = G %>% transmute (temp2= paste0(temp,extra) )
    # problem is here:
     res = res[,1]
