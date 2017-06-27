@@ -13,6 +13,7 @@ Imports:
     RPostgreSQL,
     DBI,
     stringr
-Suggests:
     dplyr
+Suggests:
+    
 RoxygenNote: 6.0.1
