@@ -4,12 +4,18 @@
 
 #' @export
 #' @param genotype_name (character) flybase stock genotype name out of genotype table 
-#' @param output (character) choose type of return, "text" for a text version, "table" for a table with each allele as a row, "html" (to do) for a html version of the name with links to flybase
+#' @param output (character) choose type of return, "text" for a text version, "table" for a table with each allele as a row, "html" for a html version of the name with links to flybase
 #' @return depending on output
 #' @examples \dontrun{
 #' 
 #' fb_clean_stock_name( genotype_name = "w<up>*</up>; @FBal0000021:βTub60D<up>2</up>@ w<up>*</up> @FBal0005583:Kr<up>If-1</up>@/@FBba0000025:CyO@")
-#' }
+#'
+#' conn <- fb_connect()
+#' genotype <- fb_get_stockname(conn, fbst = "FBst0000002")
+#' #' fb_clean_stock_name( genotype_name = genotype)
+#' fb_clean_stock_name( genotype_name = genotype, output = "html")
+#'#' }
+
 fb_clean_stock_name <- function(genotype_name, output = "text") {
   # separate string by pattern @
   stringr::str_split (genotype_name, c("@"))[[1]]->y
@@ -33,15 +39,18 @@ fb_clean_stock_name <- function(genotype_name, output = "text") {
   names(G) =c ("link","allele", "extra")
   
   if (output == "html") {
+    ###these lines need dplyr
     G = G %>% mutate (temp= paste0 ('<a href="http://flybase.org/reports/',link,'.html" target="_blank">',allele,"</a>"))
     res = G %>% transmute (temp2= paste0(temp,extra) )
-   # problem is here:
+
     res = res[,1]
     res = str_replace_all(res, "<up>", "<sup>" )
     res = str_replace_all(res, "</up>", "</sup>" )  
     res = paste(res,collapse="")
    }else if (output == "text"){
+    ###these lines need dplyr
     res = G %>% transmute (temp= paste0(allele,extra) ) 
+    
     res = res[,1]
     res = str_replace_all(res, "<up>", "[" )
     res = str_replace_all(res, "</up>", "]" )
