@@ -10,7 +10,7 @@ fb_connect(dbname = "flybase", host = "chado.flybase.org", port = 5432,
 \arguments{
 \item{dbname}{(character) database name. default: flybase}
 
-\item{host}{(character) database name. default: flybase.org}
+\item{host}{(character) database name. default: chado.flybase.org}
 
 \item{port}{(integer) database name. default: 5432}
 
