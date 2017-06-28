@@ -10,7 +10,7 @@ fb_clean_stock_name(genotype_name, output = "text")
 \arguments{
 \item{genotype_name}{(character) flybase stock genotype name out of genotype table}
 
-\item{output}{(character) choose type of return, "text" for a text version, "table" for a table with each allele as a row, "html" (to do) for a html version of the name with links to flybase}
+\item{output}{(character) choose type of return, "text" for a text version, "table" for a table with each allele as a row, "html" for a html version of the name with links to flybase}
 }
 \value{
 depending on output
@@ -23,5 +23,10 @@ one name can be given at a time
 \dontrun{
 
 fb_clean_stock_name( genotype_name = "w<up>*</up>; @FBal0000021:βTub60D<up>2</up>@ w<up>*</up> @FBal0005583:Kr<up>If-1</up>@/@FBba0000025:CyO@")
-}
+
+conn <- fb_connect()
+genotype <- fb_get_stockname(conn, fbst = "FBst0000002")
+#' fb_clean_stock_name( genotype_name = genotype)
+fb_clean_stock_name( genotype_name = genotype, output = "html")
+#' }
 }
