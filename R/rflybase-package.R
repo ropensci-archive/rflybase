@@ -14,7 +14,7 @@
 #' To use the remote database, follow instructions at 
 #' ftp://ftp.flybase.net/releases/FB2016_05/psql/README
 #'
-#' @import RPostgreSQL DBI
+#' @import RPostgreSQL DBI stringr dplyr
 #' @name rflybase-package
 #' @aliases rflybase
 #' @docType package

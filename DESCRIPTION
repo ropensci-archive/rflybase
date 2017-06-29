@@ -11,9 +11,10 @@ URL: https://github.com/ropensci/rflybase
 BugReports: https://github.com/ropensci/rflybase/issues
 Imports:
     RPostgreSQL,
-    DBI
+    DBI,
+    stringr,
+    dplyr
 Suggests:
-    dplyr,
     dbplyr,
     roxygen2 (>= 6.0.1)
 RoxygenNote: 6.0.1
