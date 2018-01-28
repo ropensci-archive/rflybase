@@ -5,3 +5,4 @@
 ^\.github
 CONDUCT.md
 README.Rmd
+^codemeta\.json$
