@@ -7,7 +7,7 @@ Authors@R: c(
     person("Scott", "Chamberlain", role = c("aut", "cre"), email = "myrmecocystus@gmail.com"),
     person("Julien", "Colomb", role = "aut")
     )
-URL: https://github.com/ropensci/rflybase
+URL: https://docs.ropensci.org/rflybase, https://github.com/ropensci/rflybase
 BugReports: https://github.com/ropensci/rflybase/issues
 Imports:
     RPostgreSQL,
