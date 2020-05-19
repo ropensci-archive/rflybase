@@ -4,8 +4,15 @@
 \alias{fb_connect}
 \title{Returns the connection to the database}
 \usage{
-fb_connect(dbname = "flybase", host = "chado.flybase.org", port = 5432,
-  user = "flybase", password = "flybase", dplyr = FALSE, ...)
+fb_connect(
+  dbname = "flybase",
+  host = "chado.flybase.org",
+  port = 5432,
+  user = "flybase",
+  password = "flybase",
+  dplyr = FALSE,
+  ...
+)
 }
 \arguments{
 \item{dbname}{(character) database name. default: flybase}

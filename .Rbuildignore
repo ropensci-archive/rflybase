@@ -3,6 +3,7 @@
 ^\.travis\.yml$
 ^\.Rhistory
 ^\.github
-CONDUCT.md
-README.Rmd
+^CODE_OF_CONDUCT.md$
+^README.Rmd$
 ^codemeta\.json$
+^Makefile$

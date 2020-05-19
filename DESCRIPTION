@@ -1,10 +1,12 @@
 Package: rflybase
 Title: Interface to 'FlyBase'
-Description: An interface to the 'FlyBase' (<http://flybase.org>).
-Version: 0.2.1.9310
+Description: An interface to 'FlyBase' (<https://flybase.org/>).
+Version: 0.2.9.91
 License: MIT + file LICENSE
 Authors@R: c(
-    person("Scott", "Chamberlain", role = c("aut", "cre"), email = "myrmecocystus@gmail.com"),
+    person("Scott", "Chamberlain", role = c("aut", "cre"),
+      email = "myrmecocystus@gmail.com",
+      comment = c(ORCID = "0000-0003-1444-9135")),
     person("Julien", "Colomb", role = "aut")
     )
 URL: https://docs.ropensci.org/rflybase, https://github.com/ropensci/rflybase
@@ -15,6 +17,5 @@ Imports:
     stringr,
     dplyr
 Suggests:
-    dbplyr,
-    roxygen2 (>= 6.0.1)
-RoxygenNote: 6.0.1
+    dbplyr
+RoxygenNote: 7.1.0

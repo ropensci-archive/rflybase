@@ -1,13 +1,8 @@
 language: r
 cache: packages
-sudo: false
-
-r_binary_packages:
-  - dplyr
+os: linux
 
 notifications:
   email:
     on_success: change
     on_failure: change
-  slack:
-    secure: ZMFnvY0VNFsEAAtJ4zw4hMcKN2fiu2SpMWKW9TQJXTV2w4ecOgjiAsP7dwc5UG8pvv0xuUcdx1aRE4dqADMWEO4RTefXjAKW8S+WgHsqutgmZ83wxTsXrMy8XbRd3cRyFQZMi9cXlc8As3bOub15gzei8xyaLA15llL3eYBCivg=
